@@ -19,15 +19,17 @@ class RecursionMathTest {
     @Test
     public void testDivision() {
         // Add JUnit tests to test your method
-    	assertEquals(27, RecursionMath.recursiveDivision(54, 2));
-    	assertEquals(3, RecursionMath.recursiveDivision(9,3));
-    	assertEquals(11, RecursionMath.recursiveDivision(121,11 ));
-        fail("Write some tests!");
+    	assertEquals(27, RecursionMath.recursiveDivision(54, 2,1));
+    	assertEquals(3, RecursionMath.recursiveDivision(9,3,1));
+    	assertEquals(11, RecursionMath.recursiveDivision(121,11,1 ));
+  
     }
 
     @Test 
     public void testPower() {
         // Add JUnit tests to test your method
-        fail("Write some tests!");
+        assertEquals(4, RecursionMath.recursivePower(2, 2));
+        assertEquals(161051, RecursionMath.recursivePower(11, 5));
+        assertEquals(16, RecursionMath.recursivePower(2, 4));
     }
 }
